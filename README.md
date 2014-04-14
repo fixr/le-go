@@ -64,7 +64,7 @@ Commands
 Resources
 ----------
 
-- [Official Tour](http://tour.golang.org/)
+- [Official Tutorial](http://tour.golang.org/)
 - [Effective Go](http://golang.org/doc/effective_go.html)
-- [Golang Book](http://www.golang-book.com)
+- [An Introduction to Programming in Go](http://www.golang-book.com)
 - [Go By Example](https://gobyexample.com)
