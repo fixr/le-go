@@ -46,12 +46,16 @@ Features
 
 - Inicialmente desarrollado en Google (2007), primera versión en 2009.
 - Open Source (BSD)
-- Compilado, concurrente, estructurado
+- Compilado, con tiempos cortos de compilación
+- Estructurado, con elementos limitados de Orientación a Objetos (structs)
+- Concurrente out-of-the-box, con primitivos y rutinas para ello
 - Tipado estático, pero inferido
 - Sintaxis derivada de C
 - Manejo automático de memoria
 - Manejo de paquetes tipo bundler _(go get)_
 - Versión actual 1.2.1 (abril 2014)
+
+_Go strikes a balance between dynamic and statically compiled languages. It's fun and efficient._ [(Why Go?)](http://nathany.com/why-go/)
 
 Commands
 --------
@@ -68,3 +72,4 @@ Resources
 - [Effective Go](http://golang.org/doc/effective_go.html)
 - [An Introduction to Programming in Go](http://www.golang-book.com)
 - [Go By Example](https://gobyexample.com)
+- [The Case for Go](https://gist.github.com/ungerik/3731476)
