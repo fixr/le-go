@@ -56,15 +56,15 @@ Features
 Commands
 --------
 
-go run file.go
-go build file.go
-go fmt file.go (frak yes!)
+- go run file.go
+- go build file.go
+- go fmt file.go (frak yes!)
 
 
 Resources
 ----------
 
-[Official Tour](http://tour.golang.org/)
-[Effective Go](http://golang.org/doc/effective_go.html)
-[Golang Book](http://www.golang-book.com)
-[Go By Example](https://gobyexample.com)
+- [Official Tour](http://tour.golang.org/)
+- [Effective Go](http://golang.org/doc/effective_go.html)
+- [Golang Book](http://www.golang-book.com)
+- [Go By Example](https://gobyexample.com)
