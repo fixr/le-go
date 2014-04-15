@@ -1,24 +1,37 @@
 package main
 
 import (
-  "fmt"
-  "time"
-  "math/rand"
+    "fmt"
+    "time"
 )
 
-func ReallyLongAndExpensiveOperation(channel chan int){
-  for {
-    rand.Seed(time.Now().UTC().UnixNano())
-    i := rand.Intn(1000)
-    time.Sleep( time.Duration(i) * time.Millisecond)
-    channel <- i
-  } 
+func pinger(c chan string) {
+    for i := 0; ; i++ {
+        c <- "ping"
+    }
+}
+
+func ponger(c chan string) {
+    for i := 0; ; i++ {
+        c <- "pong"
+    }
+}
+
+func printer(c chan string) {
+    for {
+        msg := <- c
+        fmt.Println(msg)
+        time.Sleep(time.Second * 1)
+    }
 }
 
 func main() {
-  channel := make(chan int)
-  go ReallyLongAndExpensiveOperation(channel)
-  for {
-    fmt.Println("I waited", <-channel, "milliseconds")
-  }
+    var c chan string = make(chan string)
+    
+    go pinger(c)
+    go ponger(c)
+    go printer(c)
+    
+    var input string
+    fmt.Scanln(&input)
 }
